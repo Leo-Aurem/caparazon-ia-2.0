@@ -162,6 +162,10 @@ def procesar(mensaje: Mensaje):
         "respuesta_sugerida": respuesta
     }
 
+@app.get("/estado")
+def estado_servicio():
+    return {"servicio": "Caparazon IA", "estado": "activo", "version": "2.0"}
+
 if __name__ == "__main__":
     import uvicorn
     uvicorn.run(app, host="127.0.0.1", port=8001)
