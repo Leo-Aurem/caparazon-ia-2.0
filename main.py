@@ -164,7 +164,7 @@ def procesar(mensaje: Mensaje):
 
 @app.get("/estado")
 def estado_servicio():
-    return {"servicio": "Caparazon IA", "estado": "activo"}
+    return {"servicio": "Caparazon IA", "estado": "activo", "version": "2.0"}
 
 if __name__ == "__main__":
     import uvicorn
